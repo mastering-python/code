@@ -27,7 +27,6 @@ cache:
 install:
   - mkdir -p $PIP_WHEEL_DIR
   - pip wheel -r requirements.txt
-  - pip install -e .
   - pip install tox
 
 script:
