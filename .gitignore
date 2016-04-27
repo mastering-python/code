@@ -1,3 +1,9 @@
+# Pytest files and test output files
+.xprocess/
+/*.txt
+/*.log
+/*.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

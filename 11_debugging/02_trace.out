@@ -1,0 +1,17 @@
+spam
+spam!
+eggs
+ --- modulename: 02_trace, funcname: eggs_generator
+ --- modulename: 02_trace, funcname: spam_generator
+0.00 02_trace.py(43):     yield 'spam'
+spam
+ --- modulename: 02_trace, funcname: spam_generator
+0.00 02_trace.py(44):     yield 'spam!'
+spam!
+ --- modulename: contextlib, funcname: __exit__
+0.00 contextlib.py(64):         if type is None:
+0.00 contextlib.py(65):             try:
+0.00 contextlib.py(66):                 next(self.gen)
+ --- modulename: 02_trace, funcname: trace
+0.00 02_trace.py(31):     sys.settrace(None)
+eggs

@@ -1,0 +1,20 @@
+Creating simple coroutine
+Setting up the coroutine
+
+Sending spam
+Got item: 'spam'
+
+Close the coroutine
+Normal exit
+Any exit
+
+Creating simple coroutine
+Setting up the coroutine
+
+Sending eggs
+Got item: 'eggs'
+
+Throwing runtime error
+Exception exit: RuntimeError('Oops...',)
+Any exit
+('Oops...',)
