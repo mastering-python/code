@@ -32,5 +32,6 @@ def transaction(connection):
 
 def test_insert(transaction):
     transaction.execute('create table test (id integer)')
-    transaction.execute('insert into test values (1), (2), (3)')
+    for i in range(3):
+        transaction.execute('insert into test values (?)', (i,))
 
