@@ -1,11 +1,11 @@
-Y = lambda f: lambda *args: f(Y(f))(*args)
+    Y = lambda f: lambda *args: f(Y(f))(*args)
 
 ------------------------------------------------------------------------------
 
-def Y(f):
-    def y(*args):
-        y_function = f(Y(f))
-        return y_function(*args)
+    def Y(f):
+        def y(*args):
+            y_function = f(Y(f))
+            return y_function(*args)
     return y
 
 ------------------------------------------------------------------------------
