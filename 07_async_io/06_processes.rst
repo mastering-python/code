@@ -1,3 +1,8 @@
+While the `sleep` command is available on most systems, Windows is the notable
+exception. The Windows alternative for the `sleep` command is the `timeout`
+command which is not the same but serves the same purpose for these examples.
+Thanks to Gerardo Flores for the reminder :)
+
 >>> import time
 >>> import subprocess
 >>>
