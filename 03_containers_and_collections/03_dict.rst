@@ -1,4 +1,4 @@
-.. highlight:: python
+.. code-block:: python
 
     >>> def most_significant(value):
     ...     while value >= 10:
@@ -14,7 +14,7 @@
 
 ------------------------------------------------------------------------------
 
-.. highlight::
+.. code-block:: python
 
     >>> def add(collection, key, value):
     ...     index = most_significant(key)
