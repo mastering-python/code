@@ -5,14 +5,14 @@ Flat is better than nested
 
 .. code:: python 
 
-def print_matrices():
-    for matrix in matrices:
-        print('Matrix:')
-        for row in matrix:
-            for col in row:
-                print(col, end='')
+    def print_matrices():
+        for matrix in matrices:
+            print('Matrix:')
+            for row in matrix:
+                for col in row:
+                    print(col, end='')
+                print()
             print()
-        print()
 
 **Less nesting than last example**
 
