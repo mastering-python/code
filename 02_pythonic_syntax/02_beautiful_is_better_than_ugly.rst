@@ -1,33 +1,51 @@
->>> def filter_modulo(items, modulo):
-...     output_items = []
-...     for i in range(len(items)):
-...         if items[i] % modulo:
-...             output_items.append(items[i])
-...     return output_items
-...
+Beautiful is better than ugly
+------------------------------
+
+**Ugly**
+
+.. code:: python 
+
+    def filter_modulo(items, modulo):
+        output_items = []
+        for i in range(len(items)):
+            if items[i] % modulo:
+                output_items.append(items[i])
+        return output_items
 
 >>> filter_modulo(range(10), 3)
 [1, 2, 4, 5, 7, 8]
 
+**Better than the last example**
 
->>> filter_modulo = lambda i, m: [i[j] for j in range(len(i)) if i[j] % m]
+.. code:: python 
+
+    filter_modulo = lambda i, m: 
+        [i[j]
+        for j in range(len(i)) 
+        if i[j] % m]
 
 >>> filter_modulo(range(10), 3)
 [1, 2, 4, 5, 7, 8]
 
+**Better than the last example**
 
->>> filter_modulo = lambda items, modulo: [items[i] for i in range(len(items))
-...                                        if items[i] % modulo]
+.. code:: python 
+
+    filter_modulo = lambda items, modulo: 
+        [items[i] 
+        for i in range(len(items))
+        if items[i] % modulo]
 
 >>> filter_modulo(range(10), 3)
 [1, 2, 4, 5, 7, 8]
 
+**Beautiful**
 
->>> def filter_modulo(items, modulo):
-...     for item in items:
-...         if item % modulo:
-...             yield item
-...
+.. code:: python 
+
+    def filter_modulo(items, modulo):
+        for item in items:
+            if item % modulo: yield item
 
 >>> list(filter_modulo(range(10), 3))
 [1, 2, 4, 5, 7, 8]
