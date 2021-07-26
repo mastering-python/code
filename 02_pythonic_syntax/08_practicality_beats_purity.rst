@@ -11,6 +11,8 @@ Practicality beats purity
 
 **Pythonic (Adheres to PEP8)**
 
+.. code:: python 
+
     from spam.eggs.foo.bar import spam 
     from spam.eggs.foo.bar import eggs
     from spam.eggs.foo.bar import extra_spam 
@@ -31,6 +33,6 @@ Practicality beats purity
 **Still not pythonic but a better option**
 
 .. code:: python
-    
+
     from spam_eggs_and_some_extra_spam_stuff \
         import my_spam_and_eggs_stuff_which_is_too_long_for_a_line
