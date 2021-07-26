@@ -23,10 +23,14 @@ Practicality beats purity
 
 **Not Pythonic**
 
+.. code:: python
+
     from spam_eggs_and_some_extra_spam_stuff import
     my_spam_and_eggs_stuff_which_is_too_long_for_a_line
 
 **Still not pythonic but a better option**
 
+.. code:: python
+    
     from spam_eggs_and_some_extra_spam_stuff \
         import my_spam_and_eggs_stuff_which_is_too_long_for_a_line
