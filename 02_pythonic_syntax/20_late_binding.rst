@@ -26,7 +26,7 @@ Example 1
 10
 10
 
-Example 
+Example 2
 ----------
 
 .. code:: python 
