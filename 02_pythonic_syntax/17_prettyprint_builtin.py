@@ -22,7 +22,7 @@ def pp(*args, **kwargs):
         # Search for the pp() function call with a fancy regexp
         m = re.search(r'\bpp\s*\(\s*([^)]*)\s*\)', line)
         if m:
-            print('# %s:' % m.group(1), end=' ')
+            print('# {}'.format(m.group(1), end=' '))
             break
 
     pprint.pprint(*args, **kwargs)

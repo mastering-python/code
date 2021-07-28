@@ -22,7 +22,7 @@ Spam: 1
     spam = 1
     def eggs():
         spam += 1
-        print('Spam: %r' % spam)
+        print('Spam: {} '.format(spam))
 
 >>> eggs()
 Traceback (most recent call last):
