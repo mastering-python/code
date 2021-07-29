@@ -1,4 +1,4 @@
-Deques
+Bisect
 #########
 
 Example 1
@@ -46,10 +46,3 @@ Example 2
     def contains(sorted_list, value):
         i = bisect.bisect_left(sorted_list, value) # O(log(n))
         return i < len(sorted_list) and sorted_list[i] == value
-
->>> contains(sorted_list, 2) 
-True
->>> contains(sorted_list, 4)  # O(log(n))
-False
->>> contains(sorted_list, 6)
-False
