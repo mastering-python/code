@@ -1,10 +1,20 @@
->>> import heapq
+Heapqs
+#########
 
+**Basic Usage**
 
->>> heap = [1, 3, 5, 7, 2, 4, 3]
->>> heapq.heapify(heap)
+.. code-block:: python
+
+    import heapq
+
+    heap = [1, 3, 5, 7, 2, 4, 3]
+    heapq.heapify(heap)
+
 >>> heap
 [1, 2, 3, 7, 3, 4, 5]
+
+**Removing the top of the tree 
+to get the sorted version of the list**
 
 >>> while heap:
 ...     heapq.heappop(heap), heap
